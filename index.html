@@ -48,7 +48,7 @@
             <img src="./images/profilphoto.png" class="d-block mx-lg-auto img-fluid profile-photo mt-5" alt="profile-photo" loading="lazy">
           </div>
           <div class="col-lg-6 mt-5 ml-4 ">
-            <h2 class="mb-1 ">Hello! I am</h2>
+            <h2 id="hello-text" class="mb-1 ">Hello! I am</h2>
             <h2>Ömer Özdemir</h2>
             <h3 class="change-color">Junior Developer</h3>
             <p id="introduction-paragraph" class="lead">I am passionately working on becoming a 
@@ -258,7 +258,7 @@
         skills: "Skills",
         projects: "Projects",
         contact: "Contact",
-        introduction: "Hello! I am",
+        helloText: "Hello! I am",
         introductionParagraph:`I am passionately working on becoming a Web Developer from scratch and I am currently a Business Management 
         student at Marmara University. I started my adventure with Python this summer 
         and I am currently on my way to becoming a Full-Stack Developer. I have a great interest in UI/UX design and am committed to creating visually stunning and user-friendly websites. 
@@ -306,7 +306,7 @@
         skills: "Beceriler",
         projects: "Projeler",
         contact: "İletişim",
-        introduction: "Merhaba! Ben",
+        helloText: "Merhaba! Ben",
         introductionParagraph:`Sıfırdan başlayarak tutkuyla Web Geliştiricisi olmak için çalışıyorum ve şu anda Marmara Üniversitesi'nde İşletme Yönetimi öğrencisiyim. Macerama bu yaz Python ile başladım ve şu anda Full-Stack Geliştirici  olma yolundayım. UI/UX tasarımına büyük ilgi duyuyorum ve görsel olarak çarpıcı ve kullanıcı dostu web siteleri oluşturmaya kararlıyım. Becerilerimi geliştirmek için yeni fırsatları keşfetmeyi dört gözle bekliyorum.`,
         resume: "Özgeçmiş",
         aboutTitle: "Hakkımda",
@@ -344,6 +344,7 @@
         document.querySelector("a[href='#skills']").textContent = content.skills;
         document.querySelector("a[href='#projects']").textContent = content.projects;
         document.querySelector("a[href='#contact']").textContent = content.contact;
+        document.getElementById("hello-text").textContent = content.helloText;
         document.getElementById("introduction-paragraph").innerHTML = content.introductionParagraph;
         document.getElementById("about-title").textContent = content.aboutTitle;
         document.getElementById("past-title").textContent = content.pastTitle;
