@@ -159,3 +159,42 @@ h4.change-color {
 }
 
 
+.language-switch {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    font-size: 0.75rem;
+    margin: 5px 10px 0px 15px;
+    border-radius: 20px;
+    height: 25px;
+    width: 25px;
+}
+
+.language-switch:hover {
+	transform: scale(1.05);
+
+}
+
+.language-switch button {
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    border-color: black;
+}
+
+#turkish-button {
+    background-image: url("./images/Tr-flag.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: red;
+    border: none;
+}
+
+
+#english-button {
+    background-image: url("./images/En-flag.png");
+    background-size: contain;
+    border: none
+}
